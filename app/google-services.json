@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "242546051756",
+    "project_id": "srdappai",
+    "storage_bucket": "srdappai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242546051756:android:4dea49fe9994ee456fad09",
+        "android_client_info": {
+          "package_name": "com.srd.srdapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242546051756-dv2rbadpj3c0c983g9he8cvodac2iqgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9grKJV8n4FnnO5SZNaSHSD0NAXqSonUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242546051756-dv2rbadpj3c0c983g9he8cvodac2iqgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
