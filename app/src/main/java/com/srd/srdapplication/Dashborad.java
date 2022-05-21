@@ -192,7 +192,7 @@ public class Dashborad extends AppCompatActivity {
                     OkHttpClient okHttpClient = new OkHttpClient();
                     //https://sersrd.herokuapp.com/
                     RequestBody formBody = new FormBody.Builder().add("url", urlImage).build();
-                    Request request = new Request.Builder().url("http://127.0.0.1:5000/").post(formBody).build();
+                    Request request = new Request.Builder().url("http://192.168.43.158:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
@@ -207,21 +207,31 @@ public class Dashborad extends AppCompatActivity {
 
                         @Override
                         public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                            final String message=response.body().string();
+                            final String tx="AtopicDermatitis";
                             final TextView txt = findViewById(R.id.txt);
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    try {
-                                        /////
-//                                        if(response.body().string()=="as")
-//                                            startActivity(new Intent(getApplicationContext(),Register.class));
-//                                        if(response.body().string()=="ba")
+//                                    try {
+                                        //txt.setText(response.body().string());
+                                        //txt.setText(message);
+//                                        String str=response.body().string();
+                                        if(message.equals(tx)) {
+                                            Intent intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
+                                            startActivity(intent);
+                                        }
+                                    //startActivity(new Intent(getApplicationContext(),Register.class));
+//                                        if(str=="ba")
 //                                            startActivity(new Intent(getApplicationContext(),Login.class));
-                                        txt.setText(response.body().string());
-                                        response.body().close();
-                                    } catch (IOException e) {
-                                        e.printStackTrace();
-                                    }
+
+//                                        if(txt.getText() =="ba")
+//                                            startActivity(new Intent(getApplicationContext(),Login.class));
+
+
+//                                    } catch (IOException e) {
+//                                        e.printStackTrace();
+//                                    }
                                 }
 
                             });
