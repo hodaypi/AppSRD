@@ -36,6 +36,7 @@ public class Register extends AppCompatActivity {
     //    FirebaseDatabase database;
     FirebaseFirestore database;
     String userID;
+    TextView mCreateBtn;
 
     DatabaseReference mDatabase;
     private static final String USER = "user";
@@ -55,6 +56,8 @@ public class Register extends AppCompatActivity {
         mLoginBtn = findViewById(R.id.createText);
         fAuth = FirebaseAuth.getInstance();
         database = FirebaseFirestore.getInstance();
+        mCreateBtn=findViewById(R.id.createText);
+
 //        mDatabase = database.getReference(USER);
 
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +89,12 @@ public class Register extends AppCompatActivity {
 //                }
                     //register to firebase
                 }
+            }
+        });
+        mCreateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Login.class));
             }
         });
 
