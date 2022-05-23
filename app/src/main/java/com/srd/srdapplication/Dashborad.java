@@ -198,8 +198,8 @@ public class Dashborad extends AppCompatActivity {
                             .readTimeout(30, TimeUnit.MINUTES)
                             .build();
                     //https://sersrd.herokuapp.com/
-                    RequestBody formBody = new FormBody.Builder().add("url", urlImage).build();
-                    Request request = new Request.Builder().url("http://10.200.203.75:5000/").post(formBody).build();
+                    RequestBody formBody = new FormBody.Builder().add("url", urlImage).add("id", mAuth.getUid()).build();
+                    Request request = new Request.Builder().url("http://192.168.43.158:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
