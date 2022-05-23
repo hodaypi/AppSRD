@@ -9,15 +9,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="466dp"
-        android:layout_height="805dp"
+        android:layout_width="534dp"
+        android:layout_height="1993dp"
         android:src="@drawable/im1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.48" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

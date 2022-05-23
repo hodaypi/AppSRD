@@ -172,7 +172,7 @@ public class Dashborad extends AppCompatActivity {
 
             }
             Bitmap bitmap = ((BitmapDrawable) im.getDrawable()).getBitmap();
-            uploadImage(bitmap, "pre", new UploadImageListener() {
+            uploadImage(bitmap, "pre.jpeg", new UploadImageListener() {
                 @Override
                 public void onComplete(String url) {
                     if (url == null) {
@@ -215,7 +215,7 @@ public class Dashborad extends AppCompatActivity {
                         @Override
                         public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                             final String message=response.body().string();
-                            final String tx="bla";
+                            final String tx="AtopicDermatitis";
                             //final TextView txt = findViewById(R.id.txt);
                             runOnUiThread(new Runnable() {
                                 @Override
@@ -226,10 +226,29 @@ public class Dashborad extends AppCompatActivity {
                                         //txt.setText(response.body().string());
                                         //txt.setText(message);
 //                                        String str=response.body().string();
-                                        if(message.equals(tx)) {
+
+                                    switch(message) {
+                                        case "AtopicDermatitis":
                                             Intent intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
                                             startActivity(intent);
-                                        }
+                                            break;
+                                        default:
+                                             intent = new Intent(getApplicationContext(), Login.class);
+                                            startActivity(intent);
+                                            break;
+                                    }
+
+
+
+
+//                                        if(message.equals(tx)) {
+//                                            Intent intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
+//                                            startActivity(intent);
+//                                        }
+//                                        else{
+//                                            Intent intent = new Intent(getApplicationContext(), Login.class);
+//                                            startActivity(intent);
+//                                        }
                                     //startActivity(new Intent(getApplicationContext(),Register.class));
 //                                        if(str=="ba")
 //                                            startActivity(new Intent(getApplicationContext(),Login.class));
