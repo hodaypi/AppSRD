@@ -36,6 +36,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -190,10 +191,15 @@ public class Dashborad extends AppCompatActivity {
                         });
                     }
 
-                    OkHttpClient okHttpClient = new OkHttpClient();
+                    OkHttpClient okHttpClient;
+                    okHttpClient = new OkHttpClient.Builder()
+                            .connectTimeout(10, TimeUnit.MINUTES)
+                            .writeTimeout(10, TimeUnit.MINUTES)
+                            .readTimeout(30, TimeUnit.MINUTES)
+                            .build();
                     //https://sersrd.herokuapp.com/
                     RequestBody formBody = new FormBody.Builder().add("url", urlImage).build();
-                    Request request = new Request.Builder().url("http://10.200.203.46:5000/").post(formBody).build();
+                    Request request = new Request.Builder().url("http://10.200.203.75:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
@@ -209,7 +215,7 @@ public class Dashborad extends AppCompatActivity {
                         @Override
                         public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                             final String message=response.body().string();
-                            final String tx="AtopicDermatitis";
+                            final String tx="bla";
                             //final TextView txt = findViewById(R.id.txt);
                             runOnUiThread(new Runnable() {
                                 @Override
@@ -265,8 +271,10 @@ public class Dashborad extends AppCompatActivity {
     }
 
     public void uploadImage(Bitmap imageBmp, String fileName, final UploadImageListener listener) {
+        FirebaseUser mUser = mAuth.getCurrentUser();
+        String uId = mUser.getUid();
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        final StorageReference imagesRef = storage.getReference().child("images").child(fileName);
+        final StorageReference imagesRef = storage.getReference().child("images").child(uId).child(fileName);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         imageBmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
         byte[] data = baos.toByteArray();
