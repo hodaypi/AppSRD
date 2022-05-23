@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -65,7 +66,6 @@ public class Dashborad extends AppCompatActivity {
         imageFileName = String.valueOf(System.currentTimeMillis());
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseFirestore.getInstance();
-
         camera.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
@@ -193,7 +193,7 @@ public class Dashborad extends AppCompatActivity {
                     OkHttpClient okHttpClient = new OkHttpClient();
                     //https://sersrd.herokuapp.com/
                     RequestBody formBody = new FormBody.Builder().add("url", urlImage).build();
-                    Request request = new Request.Builder().url("http://srdserver.pythonanywhere.com/").post(formBody).build();
+                    Request request = new Request.Builder().url("http://192.168.43.158:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
@@ -208,21 +208,21 @@ public class Dashborad extends AppCompatActivity {
 
                         @Override
                         public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
-                            //final String message=response.body().string();
-                            //final String tx="AtopicDermatitis";
-                            final TextView txt = findViewById(R.id.txt);
+                            final String message=response.body().string();
+                            final String tx="AtopicDermatitis";
+                            //final TextView txt = findViewById(R.id.txt);
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    try {
-                                        txt.setText(response.body().string());
-                                        response.body().close();
+//                                    try {
+                                        //txt.setText(message);
+                                        //response.body().close();
                                         //txt.setText(response.body().string());
                                         //txt.setText(message);
 //                                        String str=response.body().string();
-//                                        if(message.equals(tx)) {
-//                                            Intent intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
-//                                            startActivity(intent);
+                                        if(message.equals(tx)) {
+                                            Intent intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
+                                            startActivity(intent);
                                         }
                                     //startActivity(new Intent(getApplicationContext(),Register.class));
 //                                        if(str=="ba")
@@ -231,10 +231,10 @@ public class Dashborad extends AppCompatActivity {
 //                                        if(txt.getText() =="ba")
 //                                            startActivity(new Intent(getApplicationContext(),Login.class));
 
-
-                                     catch (IOException e) {
-                                        e.printStackTrace();
-                                    }
+//
+//                                     catch (IOException e) {
+//                                        e.printStackTrace();
+//                                    }
                                 }
 
                             });
@@ -289,5 +289,7 @@ public class Dashborad extends AppCompatActivity {
             }
         });
     }
+
+
 
 }
