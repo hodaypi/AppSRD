@@ -193,7 +193,7 @@ public class Dashborad extends AppCompatActivity {
                     OkHttpClient okHttpClient = new OkHttpClient();
                     //https://sersrd.herokuapp.com/
                     RequestBody formBody = new FormBody.Builder().add("url", urlImage).build();
-                    Request request = new Request.Builder().url("http://192.168.43.158:5000/").post(formBody).build();
+                    Request request = new Request.Builder().url("http://10.200.203.46:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
