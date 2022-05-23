@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
 
     <Button
         android:id="@+id/camera"
@@ -32,21 +33,17 @@
 
     <ImageView
         android:id="@+id/im"
-        android:layout_width="370sp"
-        android:layout_height="370sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10sp" />
+        android:layout_width="206dp"
+        android:layout_height="480dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txt"
+        android:layout_width="205dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text=""
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="27sp"
-        android:id="@+id/txt"
-        android:layout_below="@+id/classified"
-        />
+        android:textStyle="bold" />
 
 </RelativeLayout>

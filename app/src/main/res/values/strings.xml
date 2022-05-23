@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">srdapplication</string>
+    <string name="hyperlink">For more information \n<a href="https://www.clalit.co.il/he/your_health/family/Pages/atopic_dermatitis.aspx">click here</a></string>
+
 </resources>
