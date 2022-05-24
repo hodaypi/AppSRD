@@ -199,7 +199,7 @@ public class Dashborad extends AppCompatActivity {
                             .build();
                     //https://sersrd.herokuapp.com/
                     RequestBody formBody = new FormBody.Builder().add("url", urlImage).add("id", mAuth.getUid()).build();
-                    Request request = new Request.Builder().url("http://10.200.201.168:5000/").post(formBody).build();
+                    Request request = new Request.Builder().url("http://192.168.43.158:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
