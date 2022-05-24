@@ -69,25 +69,26 @@ public class Register extends AppCompatActivity {
                     password = mPassword.getText().toString();
                     url = null;
 
+                    String email = mEmail.getText().toString().trim();
+                    String password = mPassword.getText().toString().trim();
+                    String url = null;
+
+                    if (TextUtils.isEmpty(email)) {
+                        mEmail.setError("Email is required");
+                        return;
+                    }
+                    if (TextUtils.isEmpty(password)) {
+                        mPassword.setError("passeord is required");
+                        return;
+                    }
+                    if (password.length() < 6) {
+                        mPassword.setError("Password must contain at least 6 characters");
+                        return;
+                    }
+                    //register to firebase
+
                     user = new User(email,url);
                     registerUser();
-//                String email = mEmail.getText().toString().trim();
-//                String password = mPassword.getText().toString().trim();
-//                String url = null;
-//
-//                if (TextUtils.isEmpty(email)) {
-//                    mEmail.setError("Email is required");
-//                    return;
-//                }
-//                if (TextUtils.isEmpty(password)) {
-//                    mPassword.setError("passeord is required");
-//                    return;
-//                }
-//                if (password.length() < 6) {
-//                    mPassword.setError("Password must contain at least 6 characters");
-//                    return;
-//                }
-                    //register to firebase
                 }
             }
         });
