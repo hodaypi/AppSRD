@@ -6,6 +6,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.DownloadManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -50,6 +51,8 @@ public class Dashborad extends AppCompatActivity {
     Button camera;
     Button gallery;
     ImageView im;
+    TextView textView6;
+
     int imageSize = 400;
     public static String imageFileName;
     FirebaseAuth mAuth;
@@ -57,6 +60,7 @@ public class Dashborad extends AppCompatActivity {
     public String urlImage = null;
 
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +68,7 @@ public class Dashborad extends AppCompatActivity {
         camera = findViewById(R.id.camera);
         gallery = findViewById(R.id.gallery);
         im = findViewById(R.id.im);
+        textView6 = findViewById(R.id.textView6);
         imageFileName = String.valueOf(System.currentTimeMillis());
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseFirestore.getInstance();
@@ -156,6 +161,7 @@ public class Dashborad extends AppCompatActivity {
                 int dimension = Math.min(image.getWidth(), image.getHeight());
                 image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
                 im.setImageBitmap(image);
+                textView6.setText("The result will be displayed in a few seconds");
 //
 //                image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
 //                classifyImage(image);
@@ -165,6 +171,8 @@ public class Dashborad extends AppCompatActivity {
                 try {
                     image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), dat);
                     im.setImageBitmap(image);
+                    textView6.setText("The result will be displayed in a few seconds");
+
 
                 } catch (IOException e) {
                     e.printStackTrace();

@@ -8,32 +8,74 @@
     android:background="@drawable/back">
 
     <Button
-        android:id="@+id/camera"
-        android:layout_width="232dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/gallery"
-        android:layout_centerInParent="true"
-        android:text="Take Picture"
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="222dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="343dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableBottom="@drawable/gal1"
+        android:focusable="true"
+        android:padding="9dp"
         android:textAllCaps="false"
         android:textSize="21sp"
         android:textStyle="bold"
         app:backgroundTint="#E89191" />
 
     <Button
-        android:id="@+id/gallery"
-        android:layout_width="229dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/camera"
+        android:layout_width="122dp"
+        android:layout_height="117dp"
+        android:layout_above="@id/gallery"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:text="Launch Gallery"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="339dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableBottom="@drawable/cam1"
+        android:focusable="true"
         android:textAllCaps="false"
         android:textSize="21sp"
         android:textStyle="bold"
         app:backgroundTint="#E89191" />
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="195dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="685dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="132dp"
+        android:text="bbbbb"
+        android:textColor="@color/black"
+        android:textSize="36dp" />
+
     <ImageView
         android:id="@+id/im"
-        android:layout_width="match_parent"
-        android:layout_height="461dp" />
+        android:layout_width="36dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="362dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="472dp" />
 
 </RelativeLayout>
