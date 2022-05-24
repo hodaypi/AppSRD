@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">srdapplication</string>
     <string name="hyperlink">For more information \n<a href="https://www.clalit.co.il/he/your_health/family/Pages/atopic_dermatitis.aspx">click here</a></string>
-    <string name="information">אטופיק דרמטיטיס היא מחלה דלקתית כרונית של העור</string>
+    <string name="information">Atopic dermatitis is a chronic inflammatory disease of the skin</string>
 
-    <string name="difficultyLevel">אטופיק דרמטיטיס אינה מסכנת את חיי המטופל</string>
+    <string name="difficultyLevel">Atopic dermatitis does not endanger the patient\'s life</string>
 
 </resources>
