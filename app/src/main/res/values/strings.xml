@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">srdapplication</string>
+    <string name="detected">The detected Skin Rash is:</string>
+
     <string name="hyperlink">For more information \n<a href="https://www.clalit.co.il/he/your_health/family/Pages/atopic_dermatitis.aspx">click here</a></string>
     <string name="information">Atopic dermatitis is a chronic inflammatory disease of the skin</string>
 
-    <string name="difficultyLevel">Atopic dermatitis does not endanger the patient\'s life</string>
+    <string name="difficultyLevel">does not endanger the patient\'s life</string>
 
 </resources>
