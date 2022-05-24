@@ -7,16 +7,26 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <!--    android:usesCleartextTraffic="true"-->
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/im1"
         android:label="SkinRash"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".Urticaria"
+            android:exported="false" />
+        <activity
+            android:name=".Psoriasis"
+            android:exported="false" />
+        <activity
+            android:name=".PityriasisRosea"
+            android:exported="false" />
+        <activity
+            android:name=".Lupus"
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />

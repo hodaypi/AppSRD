@@ -233,23 +233,23 @@ public class Dashborad extends AppCompatActivity {
                                             startActivity(intent);
                                             break;
                                         case "lupus":
-                                            intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
+                                            intent = new Intent(getApplicationContext(), Lupus.class);
                                             startActivity(intent);
                                             break;
                                         case "PityriasisRosea":
-                                            intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
+                                            intent = new Intent(getApplicationContext(), PityriasisRosea.class);
                                             startActivity(intent);
                                             break;
                                         case "Psoriasis":
-                                            intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
+                                            intent = new Intent(getApplicationContext(), Psoriasis.class);
                                             startActivity(intent);
                                             break;
                                         case "Urticaria":
-                                            intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
+                                            intent = new Intent(getApplicationContext(), Urticaria.class);
                                             startActivity(intent);
                                             break;
                                         default:
-                                            intent = new Intent(getApplicationContext(), Login.class);
+                                            intent = new Intent(getApplicationContext(), Dashborad.class);
                                             startActivity(intent);
                                             break;
                                     }
