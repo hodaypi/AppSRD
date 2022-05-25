@@ -8,19 +8,19 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Guide extends AppCompatActivity {
-    //Button mDas;
+    Button mDas;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
-        //mDas = findViewById(R.id.button2);
+        mDas = findViewById(R.id.button3);
 
 
-//        mDas.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(getApplicationContext(),Dashborad.class));
-//            }
-//        });
+        mDas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Dashborad.class));
+            }
+        });
     }
 }
