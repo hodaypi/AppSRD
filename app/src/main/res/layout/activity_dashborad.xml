@@ -8,6 +8,17 @@
     android:background="@drawable/back"
     android:id="@+id/linearLayout">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifLoad"
+        android:layout_width="223dp"
+        android:layout_height="228dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="99dp"
+        android:src="@drawable/loadg"
+         />
+
     <Button
         android:id="@+id/gallery"
         android:layout_width="183dp"
@@ -49,20 +60,21 @@
         android:textSize="21sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="563dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="153dp"
-        android:textColor="@color/black"
-        android:textSize="12dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView6"-->
+<!--        android:layout_width="329dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="41dp"-->
+<!--        android:layout_marginTop="563dp"-->
+<!--        android:layout_marginEnd="41dp"-->
+<!--        android:layout_marginBottom="153dp"-->
+<!--        android:fontFamily="@font/comic_neue"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="16dp" />-->
 
     <ImageView
         android:id="@+id/im"

@@ -47,12 +47,15 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import pl.droidsonroids.gif.GifImageView;
 
 public class Dashborad extends AppCompatActivity {
     Button camera;
     Button gallery;
     ImageView im;
-    TextView textView6;
+//    TextView textView6;
+    GifImageView gifLoad;
+
     private LinearLayout mLayout;
     int imageSize = 400;
     public static String imageFileName;
@@ -65,11 +68,15 @@ public class Dashborad extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        gifLoad.setEnabled(false);
         setContentView(R.layout.activity_dashborad);
         camera = findViewById(R.id.camera);
         gallery = findViewById(R.id.gallery);
         im = findViewById(R.id.im);
-        textView6 = findViewById(R.id.textView6);
+//      textView6 = findViewById(R.id.textView6);
+        gifLoad = findViewById(R.id.gifLoad);
+        gifLoad.setVisibility(View.INVISIBLE);
+
         //textView6.setText("The econds");
 
 //        mLayout = (LinearLayout) findViewById(R.id.linearLayout);
@@ -93,6 +100,7 @@ public class Dashborad extends AppCompatActivity {
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 //                Uri m=cameraIntent.getData();
 //                Log.d("m" , String.valueOf(m));
@@ -165,7 +173,11 @@ public class Dashborad extends AppCompatActivity {
                 int dimension = Math.min(image.getWidth(), image.getHeight());
                 image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
                 im.setImageBitmap(image);
-                textView6.setText("The result will be displayed in a few seconds...");
+                gifLoad.setVisibility(View.VISIBLE);
+
+
+//                textView6.setText("The result will be displayed in a few seconds...");
+//                gifLoad.setEnabled(true);
 //
 //                image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
 //                classifyImage(image);
@@ -175,7 +187,9 @@ public class Dashborad extends AppCompatActivity {
                 try {
                     image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), dat);
                     im.setImageBitmap(image);
-                    textView6.setText("The result will be displayed in a few seconds");
+                    gifLoad.setVisibility(View.VISIBLE);
+
+//                    textView6.setText("The result will be displayed in a few seconds");
 
 
                 } catch (IOException e) {
