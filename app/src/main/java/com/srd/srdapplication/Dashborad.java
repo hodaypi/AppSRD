@@ -22,6 +22,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,7 +53,7 @@ public class Dashborad extends AppCompatActivity {
     Button gallery;
     ImageView im;
     TextView textView6;
-
+    private LinearLayout mLayout;
     int imageSize = 400;
     public static String imageFileName;
     FirebaseAuth mAuth;
@@ -69,6 +70,9 @@ public class Dashborad extends AppCompatActivity {
         gallery = findViewById(R.id.gallery);
         im = findViewById(R.id.im);
         textView6 = findViewById(R.id.textView6);
+        //textView6.setText("The econds");
+
+//        mLayout = (LinearLayout) findViewById(R.id.linearLayout);
         imageFileName = String.valueOf(System.currentTimeMillis());
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseFirestore.getInstance();
@@ -161,7 +165,7 @@ public class Dashborad extends AppCompatActivity {
                 int dimension = Math.min(image.getWidth(), image.getHeight());
                 image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
                 im.setImageBitmap(image);
-                textView6.setText("The result will be displayed in a few seconds");
+                textView6.setText("The result will be displayed in a few seconds...");
 //
 //                image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
 //                classifyImage(image);
@@ -207,7 +211,7 @@ public class Dashborad extends AppCompatActivity {
                             .build();
                     //https://sersrd.herokuapp.com/
                     RequestBody formBody = new FormBody.Builder().add("url", urlImage).add("id", mAuth.getUid()).build();
-                    Request request = new Request.Builder().url("http://192.168.43.158:5000/").post(formBody).build();
+                    Request request = new Request.Builder().url("http://192.168.48.20:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
@@ -340,7 +344,4 @@ public class Dashborad extends AppCompatActivity {
             }
         });
     }
-
-
-
 }
