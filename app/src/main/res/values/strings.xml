@@ -29,4 +29,8 @@
 
 
 
+    <string name="Guide">You have 2 options to choose from:\n\n -Take a picture: \n 1. Hold the cell phone steady \n 10-15 cm away from target \n 2. Ensure good lighting \n 3. Ensure target is well focused \n 4. Tap to take a picture \n 5. Ensure the image quality is good \n 6. Confirm your choice \n\n
+    -Upload image:\n
+1. Select an image from the gallery \n 2. Ensure target is well focused \n 3. Ensure the image quality is good \n\n
+Wait a few moments for a diagnosis</string>
 </resources>
