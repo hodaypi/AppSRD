@@ -1,6 +1,7 @@
 package com.srd.srdapplication;
 
-public class Loading {
+public class Intro {
     String dd;
+
 
 }
