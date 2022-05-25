@@ -41,7 +41,7 @@
         android:layout_height="59dp"
         android:fontFamily="@font/comic_neue"
         android:text="@string/important"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
         android:textColor="#517e72"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,6 +55,7 @@
         android:id="@+id/textView9"
         android:layout_width="357dp"
         android:layout_height="136dp"
+        android:fontFamily="@font/comic_neue"
         android:text="@string/SRDInformation"
         android:textAlignment="textStart"
         android:textColor="#517e72"
@@ -77,8 +78,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648" />
+        app:layout_constraintVertical_bias="0.628" />
 </androidx.constraintlayout.widget.ConstraintLayout>

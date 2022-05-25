@@ -22,7 +22,7 @@
     <string name="informationUrticaria">Urticaria can be caused by allergies, for example to food, medicine, plants, animals. In rare cases it is a symptom of a serious illness</string>
     <string name="difficultyLevelUrticaria">Urticaria can be life-threatening</string>
 
-    <string name="important">The app serves as an initial response \n and is not a substitute for a medical diagnosis</string>
+    <string name="important">The app serves as an initial response \nand is not a substitute for a medical diagnosis</string>
     <string name="SRDInformation">SRD diagnoses skin rash and classifies it either as life-threatening problem that requires immediate referral for medical treatment or as a case requiring treatment but not urgently</string>
     <string name="NoFind">However, try to check the quality of the image taken</string>
     <string name="NoFindIn">The app is under development and it is possible that the type of rash is not yet identified</string>

@@ -78,7 +78,7 @@ public class Register extends AppCompatActivity {
                         return;
                     }
                     if (TextUtils.isEmpty(password)) {
-                        mPassword.setError("passeord is required");
+                        mPassword.setError("Password is required");
                         return;
                     }
                     if (password.length() < 6) {
@@ -124,7 +124,7 @@ public class Register extends AppCompatActivity {
                     //updateUI(user);
                     Toast.makeText(Register.this, "User created", Toast.LENGTH_SHORT).show();
 
-                    startActivity(new Intent(getApplicationContext(), Dashborad.class));
+                    startActivity(new Intent(getApplicationContext(), Intro.class));
 
                 } else {
                     Toast.makeText(Register.this, "Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

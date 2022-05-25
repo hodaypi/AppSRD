@@ -1,13 +1,7 @@
 package com.srd.srdapplication;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -17,14 +11,17 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -49,11 +46,11 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import pl.droidsonroids.gif.GifImageView;
 
+
 public class Dashborad extends AppCompatActivity {
     Button camera;
     Button gallery;
     ImageView im;
-//    TextView textView6;
     GifImageView gifLoad;
 
     private LinearLayout mLayout;
@@ -225,7 +222,7 @@ public class Dashborad extends AppCompatActivity {
                             .build();
                     //https://sersrd.herokuapp.com/
                     RequestBody formBody = new FormBody.Builder().add("url", urlImage).add("id", mAuth.getUid()).build();
-                    Request request = new Request.Builder().url("http://192.168.48.20:5000/").post(formBody).build();
+                    Request request = new Request.Builder().url("http://192.168.43.158:5000/").post(formBody).build();
 
                     okHttpClient.newCall(request).enqueue(new Callback() {
                         @Override
@@ -247,10 +244,10 @@ public class Dashborad extends AppCompatActivity {
                                 @Override
                                 public void run() {
 //                                    try {
-                                        //txt.setText(message);
-                                        //response.body().close();
-                                        //txt.setText(response.body().string());
-                                        //txt.setText(message);
+                                    //txt.setText(message);
+                                    //response.body().close();
+                                    //txt.setText(response.body().string());
+                                    //txt.setText(message);
 //                                        String str=response.body().string();
 
                                     switch(message) {
