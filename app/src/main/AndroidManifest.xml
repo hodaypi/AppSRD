@@ -40,6 +40,13 @@
             android:name=".AtopicDermatitis"
             android:exported="false" />
         <activity
+            android:name=".Intro"
+            android:exported="false" />
+        <activity
+            android:name=".Guide"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
