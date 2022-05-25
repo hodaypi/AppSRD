@@ -70,7 +70,7 @@ public class Dashborad extends AppCompatActivity {
         camera = findViewById(R.id.camera);
         gallery = findViewById(R.id.gallery);
         im = findViewById(R.id.im);
-//      textView6 = findViewById(R.id.textView6);
+//        textView6 = findViewById(R.id.textView6);
         gifLoad = findViewById(R.id.gifLoad);
         gifLoad.setVisibility(View.INVISIBLE);
 
@@ -249,6 +249,7 @@ public class Dashborad extends AppCompatActivity {
                                     //txt.setText(response.body().string());
                                     //txt.setText(message);
 //                                        String str=response.body().string();
+                                    gifLoad.setVisibility(View.INVISIBLE);
 
                                     switch(message) {
                                         case "AtopicDermatitis":
@@ -279,6 +280,7 @@ public class Dashborad extends AppCompatActivity {
                                             intent = new Intent(getApplicationContext(), Dashborad.class);
                                             startActivity(intent);
                                             break;
+
                                     }
 
 
