@@ -274,6 +274,10 @@ public class Dashborad extends AppCompatActivity {
                                             intent = new Intent(getApplicationContext(), Urticaria.class);
                                             startActivity(intent);
                                             break;
+                                        case "no":
+                                            intent = new Intent(getApplicationContext(), NoFile.class);
+                                            startActivity(intent);
+                                            break;
                                         default:
                                             intent = new Intent(getApplicationContext(), Dashborad.class);
                                             startActivity(intent);

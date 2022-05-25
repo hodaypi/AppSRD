@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".NoFile"
+            android:exported="false" />
+        <activity
             android:name=".Urticaria"
             android:exported="false" />
         <activity
@@ -45,7 +48,6 @@
         <activity
             android:name=".Guide"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
