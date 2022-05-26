@@ -2,8 +2,8 @@
     <string name="app_name">srdapplication</string>
     <string name="detected">The detected Skin Rash is:</string>
 
-    <string name="notDangerous">The skin rash is not life-threatening\n Seek medical attention</string>
-    <string name="dangerous">The rash may be life-threatening\n Seek medical attention urgently</string>
+    <string name="notDangerous"><b>It is not life-threatening</b>\n\n You should seek medical advice</string>
+    <string name="dangerous"><b>It may be life-threatening</b>\n\n Seek medical treatment urgently</string>
 
     <string name="hyperlink">For more information \n<a href="https://www.clalit.co.il/he/your_health/family/Pages/atopic_dermatitis.aspx">click here</a></string>
     <string name="information">Atopic dermatitis is a chronic inflammatory disease of the skin</string>
@@ -22,7 +22,7 @@
 <!--    <string name="difficultyLevelPsoriasis">A rare form of the disease can be life-threatening</string>-->
 
     <string name="hyperlinkUrticaria">For more information \n<a href="https://www.clalit.co.il/he/medical/medical_diagnosis/Pages/urticaria_skin.aspx">click here</a></string>
-    <string name="informationUrticaria">Urticaria can be caused by allergies, for example to food, medicine, plants, animals. In rare cases it is a symptom of a serious illness</string>
+    <string name="informationUrticaria">Urticaria can be caused by allergies, for example to food, medicine, plants, animals.\nIn rare cases it is a symptom of a serious illness</string>
 <!--    <string name="difficultyLevelUrticaria">Urticaria can be life-threatening</string>-->
 
     <string name="important">The app serves as an initial response \nand is not a substitute for a medical diagnosis</string>

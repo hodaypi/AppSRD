@@ -69,14 +69,14 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="302dp"
-        android:layout_height="106dp"
+        android:layout_width="329dp"
+        android:layout_height="113dp"
         android:fontFamily="@font/comic_neue"
         android:text="@string/informationLopus"
         android:textAlignment="center"
         android:textColor="#517e72"
         android:textSize="23dp"
-        android:textStyle="bold"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -94,12 +94,12 @@
         android:textAlignment="center"
         android:textColor="#517e72"
         android:textSize="23sp"
-        android:textStyle="bold"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754"
+        app:layout_constraintVertical_bias="0.732"
         tools:ignore="MissingConstraints" />
 
     <TextView
