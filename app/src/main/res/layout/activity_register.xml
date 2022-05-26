@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="253dp"
-        android:layout_height="80dp"
+        android:layout_width="269dp"
+        android:layout_height="84dp"
         android:fontFamily="@font/comic_neue"
         android:text="Register"
         android:textAlignment="center"
@@ -19,10 +19,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintVertical_bias="0.267"
         tools:ignore="MissingConstraints" />
 
     <EditText
