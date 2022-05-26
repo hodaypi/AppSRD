@@ -2,8 +2,13 @@
     <string name="app_name">srdapplication</string>
     <string name="detected">The detected Skin Rash is:</string>
 
-    <string name="notDangerous"><b>It is not life-threatening</b>\n\n You should seek medical advice</string>
-    <string name="dangerous"><b>It may be life-threatening</b>\n\n Seek medical treatment urgently</string>
+    <string name="notDangerous"><b>It is not life-threatening</b></string>
+    <string name="go">You should seek medical advice</string>
+
+
+    <string name="dangerous"><b>It may be life-threatening</b></string>
+    <string name="mustGo">Seek medical treatment urgently</string>
+
 
     <string name="hyperlink">For more information \n<a href="https://www.clalit.co.il/he/your_health/family/Pages/atopic_dermatitis.aspx">click here</a></string>
     <string name="information">Atopic dermatitis is a chronic inflammatory disease of the skin</string>
