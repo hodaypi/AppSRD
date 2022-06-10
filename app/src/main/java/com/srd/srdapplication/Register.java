@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,13 +38,14 @@ public class Register extends AppCompatActivity {
     FirebaseFirestore database;
     String userID;
     TextView mCreateBtn;
-
+    TextView mUse;
     DatabaseReference mDatabase;
     private static final String USER = "user";
     private User user;
     private String email;
     private String password;
     private String url;
+    CheckBox checkBox ;
 
 
     @Override
@@ -57,7 +59,8 @@ public class Register extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         database = FirebaseFirestore.getInstance();
         mCreateBtn=findViewById(R.id.createText);
-
+        mUse= findViewById(R.id.textView16);
+        checkBox = findViewById(R.id.checkBox);
 //        mDatabase = database.getReference(USER);
 
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
@@ -87,15 +90,33 @@ public class Register extends AppCompatActivity {
                     }
                     //register to firebase
 
-                    user = new User(email,url);
+                    }
+
+                    if(!checkBox.isChecked()) {
+                        Toast.makeText(Register.this, "Please confirm terms of use", Toast.LENGTH_SHORT).show();
+
+                        //mUse.setError("Please confirm terms of use");
+                        return;
+
+
+                    }
+                    else{
+                    user = new User(email, url);
                     registerUser();
+                    }
                 }
-            }
         });
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),Login.class));
+            }
+        });
+
+        mUse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),TermsOfUse.class));
             }
         });
 
