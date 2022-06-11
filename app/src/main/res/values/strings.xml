@@ -8,7 +8,7 @@
     <string name="TermsofUse"><u>I accept Terms of Use</u></string>
 
     <string name="sentEmail">For any question and comment you can send an email to the keys</string>
-    <string name="email">To send the email, <u>click here</u></string>
+    <string name="email">To send an email for comments, reviews and support <u>click here</u></string>
 
 
     For any question and comment you can send an email to the keys
@@ -46,4 +46,11 @@
     <string name="Guide">You have 2 options to choose from:\n\n -Take a picture: \n 1. Hold the cell phone steady \n 10-15 cm away from target \n 2. Ensure good lighting \n 3. Ensure target is well focused \n 4. Tap to take a picture \n 5. Ensure the image quality is good \n 6. Confirm your choice \n\n
     -Upload image:\n
 1. Select an image from the gallery \n 2. Ensure target is well focused \n 3. Ensure the image quality is good \n\n Wait a few moments for a diagnosis</string>
+
+    <string name="termsToUse">
+    -Our app uses artificial intelligence to diagnose skin rashes,\n-We would like to point out the app is still in development by software engineering students as a final research project.\n-The app serves as an initial response and is not a substitute for a medical diagnosis\n-The app does not have FDA approval.\n\n-The details that are saved - email and password are only for identification in the application and this is in order to protect your privacy\n-The images you upload for diagnosis are not visible to people and are deleted immediately after their diagnosis and are not saved anywhere.
+
+    </string>
+
+
 </resources>
