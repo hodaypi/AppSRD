@@ -47,7 +47,6 @@ public class Register extends AppCompatActivity {
     private String url;
     CheckBox checkBox ;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

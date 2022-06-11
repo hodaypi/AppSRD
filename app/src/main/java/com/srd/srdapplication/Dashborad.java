@@ -299,8 +299,6 @@ public class Dashborad extends AppCompatActivity {
                                             //Log.d(TAG, "onFailure: did not delete file");
                                         }
                                     });
-
-
 //                                        if(message.equals(tx)) {
 //                                            Intent intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
 //                                            startActivity(intent);
@@ -321,28 +319,20 @@ public class Dashborad extends AppCompatActivity {
 //                                        e.printStackTrace();
 //                                    }
                                 }
-
                             });
                         }
-
                     });
                     //txt.setText(urlImage);
                     Log.i("url", url);
                     Log.i("urlImage", urlImage);
-
                 }
             });
-
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
-
             // classifyImage(image);
             //}
         }
         //txt.setText(urlImage);
-
         super.onActivityResult(requestCode, resultCode, data);
-
-
     }
 
     interface UploadImageListener {

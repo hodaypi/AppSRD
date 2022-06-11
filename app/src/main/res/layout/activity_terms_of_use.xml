@@ -42,18 +42,34 @@
         app:layout_constraintVertical_bias="0.89" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="336dp"
-        android:layout_height="419dp"
-        android:fontFamily="@font/comic_neue"
-        android:text="@string/Guide"
+        android:id="@+id/textView18"
+        android:layout_width="290dp"
+        android:layout_height="94dp"
+        android:text="@string/sentEmail"
+        android:textAlignment="textStart"
         android:textColor="#517e72"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#517e72"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.606" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

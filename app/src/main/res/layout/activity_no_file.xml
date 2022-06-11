@@ -9,23 +9,6 @@
 
 
     <TextView
-        android:id="@+id/activity_main_link"
-        android:layout_width="268dp"
-        android:layout_height="94dp"
-        android:fontFamily="@font/comic_neue"
-        android:text="To select an image again, press the button"
-        android:textAlignment="center"
-        android:textColor="#E89191"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="391dp"
         android:layout_height="76dp"
@@ -50,20 +33,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361"
+        app:layout_constraintVertical_bias="0.434"
         app:srcCompat="@drawable/ba3"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="371dp"
-        android:layout_height="223dp"
+        android:layout_width="359dp"
+        android:layout_height="165dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69"
+        app:layout_constraintVertical_bias="0.757"
         app:srcCompat="@drawable/ba4"
         tools:ignore="MissingConstraints" />
 
@@ -82,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403"
+        app:layout_constraintVertical_bias="0.464"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -100,7 +83,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665"
+        app:layout_constraintVertical_bias="0.721"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -122,10 +105,10 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
         android:fontFamily="@font/comic_neue"
-        android:text="Back"
+        android:text="Try again"
         android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold"
