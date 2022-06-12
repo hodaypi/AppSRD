@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Design.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".TermsOfUse"
+            android:exported="false" />
+        <activity
             android:name=".NoFile"
             android:exported="false" />
         <activity

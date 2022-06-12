@@ -5,6 +5,13 @@
     <string name="notDangerous"><b>It is not life-threatening</b></string>
     <string name="go">You should seek medical advice</string>
 
+    <string name="TermsofUse"><u>I accept Terms of Use</u></string>
+
+    <string name="sentEmail">For any question and comment you can send an email to the keys</string>
+    <string name="email">To send an email for comments, reviews and support <u>click here</u></string>
+
+
+    For any question and comment you can send an email to the keys
 
     <string name="dangerous"><b>It may be life-threatening</b></string>
     <string name="mustGo">Seek medical treatment urgently</string>
@@ -16,19 +23,19 @@
 
     <string name="hyperlinkLopus">For more information \n<a href="https://www.clalit.co.il/he/medical/medical_diagnosis/Pages/lupus.aspx">click here</a></string>
     <string name="informationLopus">Lupus is an autoimmune disease, in which the proper functioning of the immune system is disrupted</string>
-<!--    <string name="difficultyLevelLopus">May endanger patient life</string>-->
+    <!--    <string name="difficultyLevelLopus">May endanger patient life</string>-->
 
     <string name="hyperlinkPityriasisRosea">For more information \n<a href="https://www.infomed.co.il/diseases/pityriasis-rosea/">click here</a></string>
     <string name="informationPityriasis">Pityriasis Rosea is caused by an unknown cause</string>
-<!--    <string name="difficultyLevelPityriasis">Does not endanger the patient\'s life</string>-->
+    <!--    <string name="difficultyLevelPityriasis">Does not endanger the patient\'s life</string>-->
 
     <string name="hyperlinkPsoriasis">For more information \n<a href="https://www.clalit.co.il/he/medical/medical_diagnosis/Pages/psoriasis_guide.aspx">click here</a></string>
     <string name="informationPsoriasis">Psoriasis is a skin disease caused due to chronic inflammation</string>
-<!--    <string name="difficultyLevelPsoriasis">A rare form of the disease can be life-threatening</string>-->
+    <!--    <string name="difficultyLevelPsoriasis">A rare form of the disease can be life-threatening</string>-->
 
     <string name="hyperlinkUrticaria">For more information \n<a href="https://www.clalit.co.il/he/medical/medical_diagnosis/Pages/urticaria_skin.aspx">click here</a></string>
     <string name="informationUrticaria">Urticaria can be caused by allergies, for example to food, medicine, plants, animals.\nIn rare cases it is a symptom of a serious illness</string>
-<!--    <string name="difficultyLevelUrticaria">Urticaria can be life-threatening</string>-->
+    <!--    <string name="difficultyLevelUrticaria">Urticaria can be life-threatening</string>-->
 
     <string name="important">The app serves as an initial response \nand is not a substitute for a medical diagnosis</string>
     <string name="SRDInformation">SRD diagnoses skin rash and classifies it either as life-threatening problem that requires immediate referral for medical treatment or as a case requiring treatment but not urgently.</string>
@@ -36,9 +43,14 @@
     <string name="NoFind">However, try to check the quality of the image taken</string>
     <string name="NoFindIn">The app is under development and it is possible that the type of rash is not yet identified</string>
 
-
-
     <string name="Guide">You have 2 options to choose from:\n\n -Take a picture: \n 1. Hold the cell phone steady \n 10-15 cm away from target \n 2. Ensure good lighting \n 3. Ensure target is well focused \n 4. Tap to take a picture \n 5. Ensure the image quality is good \n 6. Confirm your choice \n\n
     -Upload image:\n
 1. Select an image from the gallery \n 2. Ensure target is well focused \n 3. Ensure the image quality is good \n\n Wait a few moments for a diagnosis</string>
+
+    <string name="termsToUse">
+    -Our app uses artificial intelligence to diagnose skin rashes,\n-We would like to point out the app is still in development by software engineering students as a final research project.\n-The app serves as an initial response and is not a substitute for a medical diagnosis\n-The app does not have FDA approval.\n\n-The details that are saved - email and password are only for identification in the application and this is in order to protect your privacy\n-The images you upload for diagnosis are not visible to people and are deleted immediately after their diagnosis and are not saved anywhere.
+
+    </string>
+
+
 </resources>

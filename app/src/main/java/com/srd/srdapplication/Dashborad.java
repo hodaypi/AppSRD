@@ -59,7 +59,7 @@ public class Dashborad extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseFirestore database;
     public String urlImage = null;
-
+    String uId;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -204,7 +204,7 @@ public class Dashborad extends AppCompatActivity {
                         urlImage = url;
                         //mAuth.getCurrentUser();
                         FirebaseUser mUser = mAuth.getCurrentUser();
-                        String uId = mUser.getUid();
+                        uId = mUser.getUid();
                         DocumentReference ref = database.collection("user").document(uId);
                         ref.update("url", url).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
@@ -281,11 +281,24 @@ public class Dashborad extends AppCompatActivity {
                                             startActivity(intent);
                                             break;
 
+
                                     }
 
-
-
-
+                                    String storageUrl = "images/" + uId +"/" +"pre.jpeg";
+                                    StorageReference storageReference = FirebaseStorage.getInstance().getReference().child(storageUrl);
+                                    storageReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void aVoid) {
+                                            // File deleted successfully
+                                            //Log.d(TAG, "onSuccess: deleted file");
+                                        }
+                                    }).addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception exception) {
+                                            // Uh-oh, an error occurred!
+                                            //Log.d(TAG, "onFailure: did not delete file");
+                                        }
+                                    });
 //                                        if(message.equals(tx)) {
 //                                            Intent intent = new Intent(getApplicationContext(), AtopicDermatitis.class);
 //                                            startActivity(intent);
@@ -306,28 +319,20 @@ public class Dashborad extends AppCompatActivity {
 //                                        e.printStackTrace();
 //                                    }
                                 }
-
                             });
                         }
-
                     });
                     //txt.setText(urlImage);
                     Log.i("url", url);
                     Log.i("urlImage", urlImage);
-
                 }
             });
-
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
-
             // classifyImage(image);
             //}
         }
         //txt.setText(urlImage);
-
         super.onActivityResult(requestCode, resultCode, data);
-
-
     }
 
     interface UploadImageListener {
