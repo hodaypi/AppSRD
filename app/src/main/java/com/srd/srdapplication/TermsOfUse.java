@@ -10,14 +10,14 @@ import android.widget.TextView;
 
 public class TermsOfUse extends AppCompatActivity {
 
-    Button mDas;
+//    Button mDas;
     TextView mMail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terms_of_use);
 
-        mDas=findViewById(R.id.button3);
+//        mDas=findViewById(R.id.button3);
         mMail=findViewById(R.id.mail);
 
         mMail.setOnClickListener(new View.OnClickListener() {
@@ -35,12 +35,12 @@ public class TermsOfUse extends AppCompatActivity {
             }
         });
 
-        mDas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Register.class));
-            }
-        });
+//        mDas.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(getApplicationContext(),Register.class));
+//            }
+//        });
 
 
     }
