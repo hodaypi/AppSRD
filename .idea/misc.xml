@@ -3,26 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_dashborad.xml" value="0.10587639311043566" />
-        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_login.xml" value="0.10157041540020263" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/font/.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/font/comic_neue.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_atopic_dermatitis.xml" value="0.264" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_dashborad.xml" value="0.25" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_guide.xml" value="0.2" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_intro.xml" value="0.176" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_lupus.xml" value="0.264" />
         <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_main.xml" value="0.12708333333333333" />
-        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_register.xml" value="0.10587639311043566" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_atopic_dermatitis.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_dash.xml" value="0.13467293715262932" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_dashborad.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_guide.xml" value="0.14749893116716545" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_intro.xml" value="0.22" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_lupus.xml" value="0.1" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_no_file.xml" value="0.2265625" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_pityriasis_rosea.xml" value="0.176" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_psoriasis.xml" value="0.264" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_terms_of_use.xml" value="0.264" />
+        <entry key="..\:/Users/hoday/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_urticaria.xml" value="0.23278985507246377" />
+        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_atopic_dermatitis.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_dashborad.xml" value="0.1" />
+        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_login.xml" value="0.1640625" />
         <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_no_file.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_pityriasis_rosea.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_psoriasis.xml" value="0.14749893116716545" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_terms_of_use.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_urticaria.xml" value="0.14749893116716545" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1525" />
-        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1685" />
+        <entry key="..\:/Users/student/Documents/GitHub/AppSRD/app/src/main/res/layout/activity_register.xml" value="0.16666666666666666" />
       </map>
     </option>
   </component>
@@ -31,5 +31,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>
