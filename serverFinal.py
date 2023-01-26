@@ -36,7 +36,7 @@ config = {
 
 app = Flask(__name__)
 
-MODEL_PATH = r"C:\Users\hoday\Documents\GitHub\pythonProject\inceptionV3AdamSoftmax.weights.best.h5"
+MODEL_PATH = r"C:\inceptionV3.best.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
 
 
