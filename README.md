@@ -14,13 +14,17 @@ SRD works like this:
 <br> First, the user logs in to the application - only registered users can use it. 
 <br> The application allows the user to take a picture or upload a picture from the gallery and when he chooses a picture the application sends it to the server,
 <br>the server receives it and activates our model the model makes a prediction for the picture and returns the classification to the application,
-<br> and the application shows the user the type of rash detected and if it could be life-threatening or there is no concern and in addition there is a link for more information.
-
+<br> and the application shows the user the type of rash detected and if it could be life-threatening or there is no concern and in addition there is a link for more information.<br>
+![workfloww](https://user-images.githubusercontent.com/62617707/217581689-f7f9fa30-cf09-4881-9c15-3aec14ee5db0.png)
 ### DataSet ###
-We created a DataSet of five types of rashes by using images from certified dermatology websites that approve the use of images.
-<br>The 5 types of rashes we have chosen are rashes that are common in Israel, 3 of them indicate a potentially life-threatening situation and 2 of them do not.
-<br>We divided the pictures into 2:
+We created a DataSet of five types of rashes by using images from 3 certified dermatology websites that approve the use of images:
+- https://www.atlasdermatologico.com.br/browse.jsf<br>
+- https://dermnetnz.org/image-library<br>
+- https://www.kaggle.com/datasets/shubhamgoel27/dermnet<br>
+The 5 types of rashes we have chosen are rashes that are common in Israel, 3 of them indicate a potentially life-threatening situation and 2 of them do not. <br>
+We divided the pictures into 2:
 * The Train group - we will train the model with these pictures, and they are 80% percent of the total pictures,
 <br>When 90% of the images are used for training and 10% of the images are used for verification and improvement of the model.
 * The Test group which is used to test the model and evaluate it - what is its accuracy percentage and what is its error percentage. 
-<br>And it is 20% of the total number of images.
+<br>And it is 20% of the total number of images.<br>
+In the project we want to demonstrate ability on 5 types of skin rushs.
