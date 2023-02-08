@@ -21,10 +21,10 @@ We created a DataSet of five types of rashes by using images from 3 certified de
 - https://www.atlasdermatologico.com.br/browse.jsf<br>
 - https://dermnetnz.org/image-library<br>
 - https://www.kaggle.com/datasets/shubhamgoel27/dermnet<br>
-The 5 types of rashes we have chosen are rashes that are common in Israel, 3 of them indicate a potentially life-threatening situation and 2 of them do not. <br>
+The 5 types of rashes we have chosen are rashes that are common in Israel, 3 of them indicate a potentially life-threatening situation and 2 of them do not.<br>
 We divided the pictures into 2:
-* The Train group - we will train the model with these pictures, and they are 80% percent of the total pictures,
+- The Train group - we will train the model with these pictures, and they are 80% percent of the total pictures,
 <br>When 90% of the images are used for training and 10% of the images are used for verification and improvement of the model.
-* The Test group which is used to test the model and evaluate it - what is its accuracy percentage and what is its error percentage. 
+- The Test group which is used to test the model and evaluate it - what is its accuracy percentage and what is its error percentage. 
 <br>And it is 20% of the total number of images.<br>
 In the project we want to demonstrate ability on 5 types of skin rushs.
